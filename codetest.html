@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Parallax Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Full Page Parallax Section */
+        .parallax {
+            background-image: url(WhatsApp\ Image\ 2024-09-29\ at\ 20.55.21_143c6174.jpg); /* Replace with your image */
+            height: 100vh; /* 100% of the viewport height */
+            background-attachment: fixed; /* Fixed parallax scrolling */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
+            background-size: cover; /* Ensures image covers entire section */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            letter-spacing: 2px;
+        }
+
+        /* Caption Styling */
+        .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        /* Content Section Below the Parallax */
+        .content-section {
+            padding: 60px;
+            text-align: center;
+            background-color: #f7f7f7;
+            font-size: 24px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .caption {
+                font-size: 28px;
+                padding: 10px 20px;
+            }
+        }
+        
+        .popup-content {
+            background-color: white;
+           
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            
+
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .popup-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .popup-content p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .close-btn {
+            background-color: #E74C3C; /* Red */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #C0392B;
+        }
+        .image{
+            height:200 px;
+            width: 200 px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* General Parallax Style */
+        .parallax-section {
+            height: 100vh; /* Full viewport height */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Section 1 with a Unique Background Image */
+        .parallax-1 {
+            background-image: url(WhatsApp\ Image\ 2024-09-29\ at\ 20.55.21_143c6174.jpg); /* Replace with your first image */
+        }
+
+        /* Section 2 with a Different Background Image */
+        .parallax-2 {
+            background-image: url(23.png); /* Replace with your second image */
+        }
+
+        /* Section 3 with Another Different Background Image */
+        .parallax-3 {
+            background-color: grey; /* Replace with your third image */
+        }
+
+        /* Non-parallax content section */
+        .content-section {
+            padding: 60px;
+            background-color: #f7f7f7;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- Header with logo and navigation -->
+     <header class="header"><center>
+        <div ><img src="/bit77 (5).png"></div>
+    </center>
+    
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div><ul>
+                <li >About</li>
+                <li>Academic</li>
+                <li>Admission</li>
+                <li>Departments</li>
+                <li>Placements</li>
+                <li>Campus Life</li>
+                <li>Blogs</li>
+                <li>Login</li>
+            </ul>
+        </div>
+        </div>
+        
+       
+        
+        
+    </header>
+
+
+
+   
+        
+    </div>
+        
+
+        <!-- Container for stacked boxes -->
+        <div class="box-container">
+            <div class="box">what's new</div>
+            <div class="box">Latest updates</div>
+            <div class="box">Recruitment</div>
+            <div class="box">student activities</div>
+        </div>
+    </div>
+        </div>
+        </header>
+    
+    
+        <!-- Content Section Between Parallax Sections -->
+        <section class="content-section"><center>
+            <h2>The Visionary</h2>
+            <img src="Screenshot 2024-09-29 212745.png" >
+        </center>
+            <center>
+            <p style="color: black;"><i>Seth Balkrishan was a great philanthropist and a paragon of human virtues. 
+His contributions in the field of education, sports, social upliftment and spiritual need of the community are legendary in Bhilai and indeed in the region. 
+His enlightened humanity stands today as a beacon of hope. 
+In these difficult times when the nation is at the cross-roads, seeking cultural and emotional integration at large, his ideals stand as a worthy example for the 
+future graduates of Bhilai Institute of Technology to engage and win in the global context and be ready to change the future landscape of India and other countries.
+
+<b>No Step is lost. Every moment is a gain. 
+Every effort is the struggle and will be counted as merit."</b></i> </p></center>
+        </section>
+    
+        <!-- Parallax Section 2 -->
+        <div class="parallax-section parallax-2">
+           
+        </div>
+    
+           
+        </div>
+    </div>
+    <section class="content-section" style="background-image:url(); background-repeat: no-repeat;background-position:0vw;">
+        
+       
+       
+        <h2>ABOUT BIT DURG</h2>
+        <p>BIT Durg is a premier institution focused on fostering innovation and excellence in Engineering, Technology, and Management. Join us on a journey to shape the future of engineering professionals across the globe.</p>
+        <div class="parallax-container">
+            <div class="parallax-background"></div>
+            <div class="content-section">
+              <div class="inline-container">
+                <!-- Message from the Principal -->
+                <div class="media-coverage">
+                  <h2>Message from the Principal</h2>
+                  <img src="Principal.png">
+                  <p style="color: white;"><b>Dr. Arun Arora, Principal of BIT Durg...</b></p>
+                  <p style="color: white;">Bhilai Institue of Technology </p>
+                  <a href="#" style="color:rgb(6, 46, 87)">Read More...</a>
+                </div>
+                
+                <!-- Media Coverage -->
+                <div class="media-coverage">
+                  <h2><i class="fa fa-trophy"></i> Media Coverage</h2>
+                  <img src="IMG_20241003_235439.jpg" alt="Media Coverage">
+                  
+                  <p style="color: white;">Project Showcase Competition under the Theme of Open Innovation..</p>
+                  
+                  <a href="#"style="color:rgb(6, 46, 87)"">View All...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    
+
+          </section>
+        
+ <!-- Parallax Section -->
+     <div class="parallax" id="sec" style="background-image: url(WhatsApp\ Image\ 2024-10-02\ at\ 15.13.10_1b35595d.jpg);">
+       
+        <div class="grid-container">
+            <!-- Grid Items -->
+            <div class="grid-item" style="opacity: 1;">
+                <span class="expand-icon">&#x2197;</span>
+                <div class="icon"></div>
+                <div class="title" >Events</div>
+                
+            </div>
+
+            <div class="grid-item">
+                <span class="expand-icon">&#x2197;</span>
+                <div class="icon"></div>
+                <div class="title">gallery</div>
+            </div>
+
+            <div class="grid-item">
+                <span class="expand-icon">&#x2197;</span>
+                <div class="icon"></div>
+                <div class="title">Awards</div>
+            </div>
+
+            <div class="grid-item">
+                <span class="expand-icon">&#x2197;</span>
+                <div class="icon"></div>
+                <div class="title">News </div>
+            </div>
+
+            <div class="grid-item">
+                <span class="expand-icon">&#x2197;</span>
+                <div class="icon"></div>
+                <div class="title">Faculty profile</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+        <body class="bg-blue-900 text-white font-sans" style="background-color: #333;">
+            <div class="container mx-auto py-8" style="background-color: #333;">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="text-center" >
+                        <img src="download (9).png">
+                        
+                        <h1 class="text-4xl font-bold">BIT-DURG</h1>
+                        <p class="text-lg">BHILAI INSTITUTE OF TECHNOLOGY</p>
+                    </div>
+                <div class="grid grid-cols-4 gap-8">
+                    <div>
+                        <h2 class="text-lime-400 text-xl font-bold mb-4">ADDRESS</h2>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-paper-plane"></i> Institute Code: 01, Established in 1986</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Bhilai House, Durg, Chhattisgarh-491001</li>
+                            <li><i class="fas fa-envelope"></i> bit@bitdurg.ac.in</li>
+                            <li><i class="fas fa-phone"></i> 0788-2359297</li>
+                            <li><i class="fas fa-mobile-alt"></i> +91 0788-2359263</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-lime-400 text-xl font-bold mb-4">QUICK LINKS</h2>
+                        <ul class="space-y-2">
+                            <li>Sports</li>
+                            <li>OJAS</li>
+                            <li>NSS</li>
+                            <li>Facilities</li>
+                            <li>Clubs</li>
+                            <li>Contact Us</li>
+                            <li>Online Fee Payment</li>
+                            <li>BITCON</li>
+                            <li>NCC</li>
+                            <li>Hostel</li>
+                            <li>Moodle</li>
+                            <li>e-Books</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-sky-400 text-xl font-bold mb-4">DOWNLOADS</h2>
+                        <ul class="space-y-2">
+                            <li>Backlog Exam Form</li>
+                            <li>Transfer & Provisional Certificate Form</li>
+                            <li>Magazine</li>
+                            <li>Revaluation Form</li>
+                            <li>Admission form</li>
+                            <li>Calendar</li>
+                            <li>Prospectus</li>
+                        </ul>
+                    </div>
+                    <div>
+                       
+                  
+</body>
+</html>
