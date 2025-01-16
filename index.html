@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BIT Durg</title>
+    <style>
+        /* Full-page setup */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+            background-size: cover;
+      
+            background-repeat: no-repeat; /* Dark blue background */
+            color: rgb(0, 0, 0); /* Text color */
+        }
+
+        .welcome-container {
+            text-align: center;
+            animation: fadeIn 2s ease-out forwards; /* Fade-in effect */
+        }
+
+        .welcome-container h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Fade-in keyframe */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body  style="background-image:url(hgjh.jpg)">
+
+
+    <div class="welcome-container">
+        <h1>Welcome </h1>
+        <h1>To</h1>
+        <h1>BIT Durg</h1>
+    </div>
+
+    <script>
+        // Redirect after 2 seconds to the main page
+        setTimeout(function() {
+            window.location.href = "codetest.html"; // Replace with your main page URL
+        }, 2000); // 2000ms = 2seconds
+    </script>
+
+</body>
+</html>
